@@ -99,13 +99,13 @@ Project contains:
 
 ## HMI - Emergency Stop
 
-![Emergency Stop](09_HMI_Emergency_Stop.png)
+![Emergency Stop](09_Emergency_Stop.png)
 
 ---
 
 ## HMI - Stop Button
 
-![Stop Button](10_HMI_Stop_Button.png)
+![Stop Button](10_Stop_Button.png)
 
 ---
 
