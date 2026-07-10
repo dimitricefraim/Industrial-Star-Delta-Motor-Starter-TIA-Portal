@@ -105,7 +105,7 @@ Project contains:
 
 ## HMI - Stop Button
 
-![Stop Button](10_Stop_Button.png)
+![Stop Button](10_Stop_PB.png)
 
 ---
 
