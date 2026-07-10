@@ -1,8 +1,8 @@
-# Siemens Star-Delta Motor Starter
+# Industrial Star-Delta Motor Starter | Siemens TIA Portal
 
-Industrial PLC project developed using **Siemens TIA Portal V20**, **S7-1200 PLC**, **WinCC HMI**, and **PLCSIM**.
+Industrial PLC project developed using **Siemens TIA Portal V20**, **S7-1200 PLC**, **WinCC HMI**, and **Siemens PLCSIM**.
 
-This project simulates an industrial Star-Delta motor starter with automatic startup sequence, fault protection, and HMI monitoring.
+This project simulates an industrial Star-Delta motor starter with automatic startup sequence, fault protection, operator control, and HMI monitoring.
 
 ---
 
@@ -11,7 +11,7 @@ This project simulates an industrial Star-Delta motor starter with automatic sta
 - Physical Start / Stop Push Buttons
 - HMI Start / Stop Control
 - Motor Run Latch
-- Automatic Star-Delta Sequence
+- Automatic Star-Delta Starting Sequence
 - Adjustable Star Timer
 - Adjustable Transition Delay
 - Main Contactor Control (K1)
@@ -20,19 +20,21 @@ This project simulates an industrial Star-Delta motor starter with automatic sta
 - Emergency Stop Protection
 - Thermal Overload Protection
 - Star/Delta Interlock Fault Detection
-- Fault Reset
+- Manual Fault Reset
 - Status Lamps
 - WinCC HMI Monitoring
 - PLC Simulation using Siemens PLCSIM
 
 ---
 
-# Hardware
+# Hardware & Software
 
-**PLC**
+## PLC
+
 - Siemens S7-1200 CPU 1214C DC/DC/DC
 
-**Software**
+## Software
+
 - Siemens TIA Portal V20
 - Siemens WinCC
 - Siemens PLCSIM V20
@@ -61,6 +63,20 @@ This project simulates an industrial Star-Delta motor starter with automatic sta
 
 ---
 
+# Project Files
+
+The complete Siemens TIA Portal V20 project is included in this repository.
+
+Project contains:
+
+- PLC Program (LAD)
+- WinCC HMI
+- Data Blocks
+- Timers
+- Simulation Configuration
+
+---
+
 # Project Gallery
 
 ## HMI - Star Mode
@@ -83,51 +99,59 @@ This project simulates an industrial Star-Delta motor starter with automatic sta
 
 ## HMI - Emergency Stop
 
-![Emergency Stop](09_Emergency_Stop.png)
+![Emergency Stop](09_HMI_Emergency_Stop.png)
 
 ---
 
 ## HMI - Stop Button
 
-![Stop Button](10_Stop_PB.png)
+![Stop Button](10_HMI_Stop_Button.png)
 
 ---
 
 ## PLC Logic - Start / Stop / Run Latch
 
-![PLC Logic](01_Start_Stop_Run_Latch.png)
+![Start Stop](01_Start_Stop_Run_Latch.png)
 
 ---
 
-## PLC Logic - Star Timer
+## PLC Logic - Star Mode & Timer
 
-![PLC Logic](02_Star_Mode_Timer.png)
+![Star Timer](02_Star_Mode_Timer.png)
 
 ---
 
 ## PLC Logic - Star-Delta Transition
 
-![PLC Logic](03_Star_Delta_Transition.png)
+![Transition](03_Star_Delta_Transition.png)
 
 ---
 
 ## PLC Logic - Contactors & Interlock
 
-![PLC Logic](04_Contactors_Interlock.png)
+![Interlock](04_Contactors_Interlock.png)
 
 ---
 
 ## PLC Logic - Fault Protection
 
-![PLC Logic](05_Fault_Protection.png)
+![Fault Protection](05_Fault_Protection.png)
 
 ---
 
-# Notes
+# Validation
 
-The PLC logic has been fully implemented and tested using Siemens PLCSIM.
+The PLC logic has been fully implemented and validated using Siemens PLCSIM.
 
-The WinCC HMI is partially completed because the WinCC Runtime license expired during development.
+The available HMI screens demonstrate:
+
+- Star Mode
+- Delta Mode
+- Thermal Overload Alarm
+- Emergency Stop
+- Operator Controls
+- Contactor Status
+- Alarm Status
 
 ---
 
@@ -136,7 +160,8 @@ The WinCC HMI is partially completed because the WinCC Runtime license expired d
 - Siemens TIA Portal V20
 - Siemens S7-1200
 - Ladder Logic (LAD)
-- WinCC
+- Siemens WinCC
 - Siemens PLCSIM
 - Industrial Automation
 - Motor Control
+- Star-Delta Starter
